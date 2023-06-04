@@ -1,0 +1,186 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: aliceblue;
+	width: 100%;
+	height: 100%;
+	user-select: none;
+	overflow-X: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+header {
+	width: 100%;
+	height: 70px;
+	background: linear-gradient(90deg, #3f3f42, aliceblue);
+	padding: 10px 10px 10px 20px;
+	color: aliceblue;
+}
+.comp_name {
+	font-family: 'Caveat', cursive;
+	font-size: 40px;
+}
+.navigation {
+	display: flex;
+}
+.navigation > div > a {
+	text-decoration: none;
+	padding: 0 10px;
+	color: aliceblue;
+	border-left: 1px solid aliceblue;
+}
+.navigation > div:nth-child(1) > a {
+	padding-left: 0;
+	color: aliceblue;
+	border-left: none;
+}
+.navigation > div > a:active {
+	color: blue;
+	text-decoration: underline;
+}
+.navigation > div > a:hover {
+	text-decoration: underline;
+}
+.active {
+	text-decoration: underline!important;
+}
+main {
+	display: flex;
+	height: 80%;
+	min-height: 550px;
+}
+section {
+	margin: 20px;
+	border-radius: 20px;
+	border: 2px solid #3f3f42;
+	box-sizing: border-box;
+	height: 70%;
+}
+.shops_list {
+	width: 20%;
+	margin-right: 10px;
+	min-width: 200px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0;
+	overflow-Y: auto;
+	transition: all 0.5s;
+	font-size: 20px;
+}
+.shops_list > div {
+	width: 60%;
+	margin: 10px 0;
+	text-align: center;
+	margin: 10px auto;
+	
+}
+.shops_list_button {
+	padding: 20px 0;
+	border: 2px solid #3f3f42;
+	border-radius: 10px;
+	transition: transform 0.5s;
+	
+}
+.shops_list_button:hover {
+	background: lightgrey;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+.shops_list_title {
+	font-weight: bold;
+}
+.food_list {
+	width: 80%;
+	margin-left: 10px;
+	min-width: 300px;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	overflow-Y: auto;
+}
+.food_card {
+	width: 280px;
+	max-height: 250px;
+	border: 2px solid #3f3f42;
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 10px;
+	justify-content: space-evenly;
+}
+.food_image {
+	width: 240px;
+	height: 120px;
+	margin: 10px auto;
+	background: linear-gradient(90deg, #f9a00a, #e7e52c);
+	border: 2px solid #3f3f42;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.food_title {
+	width: 170px;
+	height: fit-content;
+	font-family: 'Caveat', cursive;
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.food_price {
+	width: fit-content;
+	height: fit-content;
+	font-size: 30px;
+	font-weight: bold;
+}
+.cart_btn_block {
+	transform: translate(65px, 0);
+}
+button {
+	margin: 10px;
+	padding: 10px;
+	font-size: 15px;
+	cursor: pointer;
+}
+footer {
+	background: linear-gradient(90deg, #3f3f42, aliceblue);
+	display: flex;
+	font-size: 12px;
+	height: 75px;
+	align-content: center;
+	flex-wrap: wrap;
+	color: aliceblue;
+}
+footer > div {
+	margin-left: 20px;
+}
+.shop_active {
+	font-weight: bold;
+	background: lightgrey;
+}
+.attention {
+	display: none;
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	min-height: 220px;
+	top: 35%;
+	left:35%;
+	background: pink;
+	z-index: 1;
+	flex-wrap: wrap;
+}
+.attention > div {
+	height: 30px;
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.1em;
+	margin: 2vw auto;
+	text-indent: 1.1em;
+	text-align: justify;
+}
+.message_button > button {
+	margin: 20px auto;
+	width: 75px;
+} 

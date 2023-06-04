@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+	<title>shops_page</title>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel='stylesheet' href='./style/shop_page.css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+<template>
+	<div class='food_card'>
+		<div class='food_image'>
+		</div>
+		<div class='food_title'>
+		</div>
+		<div class='food_price'>
+		</div>
+		<div class='cart_btn_block'>
+			<button>add to Cart</button>
+		</div>
+	</div>
+</template>
+<header>
+	<div class='comp_name'>
+		MyFoodDeliveryTest.com
+	</div>
+	<div class='navigation'>
+		<div>
+			<a href='#' class='active'>Shop</a>
+		</div>
+		<div>
+			<a href='./html/shop_cart_page.html'>Shopping Cart</a>
+		</div>
+		<div>
+			<a href='#'>History</a>
+		</div>
+	</div>
+</header>
+<main>
+	<section class='attention'>
+		<div>
+			<div>
+				If you select food from another store, the previous selection in the cart will be deleted!
+			</div>
+		</div>
+		<div class='message_button'>
+			<button>OK</button>
+		</div>
+	</section>
+	<section class='shops_list'>
+		<div class='shops_list_title'>
+			Shops:
+		</div>
+		<div class='shops_list_button' id='McDonny'>
+			Mc Donny
+		</div>
+		<div class='shops_list_button' id='CFK'>
+			CFK
+		</div>
+		<div class='shops_list_button' id='StreetPizza'>
+			Street Pizza
+		</div>
+		<div class='shops_list_button' id='TokyoSushi'>
+			Tokyo Sushi
+		</div>
+	</section>
+	<section class='food_list'>
+</main>
+<footer>
+	<div class='contact_information'>
+		<div class='phone'>phone: +123456789</div>
+		<div class='email'>mail: test@test.com</div>
+	</div>
+	<div class='copyright_information'>&copy; 2023, "MyFoodDeliveryTest.com"</div>
+</footer>
+<!--<script src='../backend/json.js'></script>-->
+<script src='./js/food_catalog_handler.js'></script>
+<!--<script src='./js/test.js'></script>-->
+</body>
+</html>
